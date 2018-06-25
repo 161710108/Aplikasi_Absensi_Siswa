@@ -34,10 +34,6 @@ Route::resource('absensi','AbsensiController');
  });
 
 
-Route::group(['prefix'=>'admin', 'middleware'=>'auth','role:Member'],function(){
-	Route::resource('absensi','AbsensiController');
-
- });
 
 
 Route::get('/', 'FrontendController@index');
